@@ -1,4 +1,4 @@
-var bell = new Audio("../../media/bell.mp3");
+var bell = new Audio("./media/bell.mp3");
 
 $(document).ready(function(){
   var snoozeCounter = 0;
@@ -13,7 +13,7 @@ $(document).ready(function(){
       bell.pause();
       setTimeout(function(){
         bell.play();
-        $("#wakeup").html("<img src='../../media/wakeup.jpg' alt='alarm clock chasing hapless human'>");
+        $("#wakeup").html("<img src='./media/wakeup.jpg' alt='alarm clock chasing hapless human'>");
         $("#snooze").show();
       }, snoozeTime*60*1000);
     } else {

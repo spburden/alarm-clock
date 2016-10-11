@@ -1,4 +1,4 @@
-var bell = new Audio("../../media/bell.mp3");
+var bell = new Audio("./media/bell.mp3");
 
 $(document).ready(function(){
   var alarmCounter = 0;
@@ -25,7 +25,7 @@ $(document).ready(function(){
         var index = alarmArray.indexOf(timer);
         $("#alarmDisplay" + index).remove();
         bell.play();
-        $("#wakeup").html("<img src='../../media/wakeup.jpg' alt='alarm clock chasing hapless human'>");
+        $("#wakeup").html("<img src='./media/wakeup.jpg' alt='alarm clock chasing hapless human'>");
         $("#snooze").show();
       }, difference);
       alarmArray.push(timer);
